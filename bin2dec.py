@@ -8,3 +8,10 @@ while True:
     else:
         break
 
+number = 0
+user_input = user_input[::-1]
+for i in range(len(user_input)):
+    if int(user_input[i]) == 1:
+        number += 1 * (2 ** i)
+
+print(f"Your number in decimal: {number}")
